@@ -17,7 +17,7 @@ defmodule Sequence.Stash do
     { :reply, current_value, current_value }
   end
 
-  def handle_cast({:set_value, value}, _from, _current_value) do
+  def handle_cast({:save_value, value}, _current_value) do
     { :noreply, value }
   end
 end
